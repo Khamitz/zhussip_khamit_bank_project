@@ -40,7 +40,7 @@ def transactions():
     print(otchet_acc_tr)
 
 
-def transfer():
+def transfer():     #перовод
     cursor = conn.cursor()
 
     A = int(input("Пожалуйста, введите счет отправителя:"))
@@ -107,10 +107,8 @@ def graph(): #ГРАФИК СЧЕТА
     A_graph = int(input("Пожалуйста, введите аккаунт айди для просмотра истории баланса:"))
     query = "SELECT * FROM tr2 where idd={}".format(A_graph)
     otchet = pd.read_sql(query, con=conn)
-    otchet['MONEY'] = pd.to_numeric(otchet['MONEY'])
     x = otchet['MONEY']
-
-    plt.xlabel(' ')
+ 
     plt.title('График историей изменения баланса по ID - {} '.format(A_graph))
     plt.ylabel('{}'.format(cursor.execute('select currency from bnk where idd={}'.format(A_graph)).fetchone()[0]))
 
