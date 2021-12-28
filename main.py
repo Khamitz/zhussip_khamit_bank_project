@@ -1,7 +1,5 @@
 import cx_Oracle
 import pandas as pd
-from matplotlib import pyplot as plt
-from matplotlib import style
 from new_acc import new_acc, transactions, transfer, refill, graph
 
 
@@ -30,5 +28,5 @@ if __name__ == '__main__':
     elif enter1 == 5:  #ГРАФИК
         graph()
     else:
-        print("дурыс тандау керек еды:")
+        print("НЕПРАВИЛЬНО ВЫБРАЛ")
 
