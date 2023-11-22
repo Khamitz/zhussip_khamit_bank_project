@@ -3,6 +3,7 @@ import pandas as pd
 from new_acc import new_acc, transactions, transfer, refill, graph
 
 # тест
+# test 2
 
 if __name__ == '__main__':
     conn = cx_Oracle.connect(user='SYS', password='Kk9078123', mode=cx_Oracle.SYSDBA)
