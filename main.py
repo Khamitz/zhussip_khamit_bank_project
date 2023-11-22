@@ -23,7 +23,7 @@ if __name__ == '__main__':
         new_acc()
     elif enter1 == 2:  #ВСЕ ТРАНЗАКЦИИ ПО СЧЕТУ
         transactions()
-    elif enter1 == 3:  #ПЕРЕВОД
+    elif enter1 == 3:  #ПЕРЕВОД test 3
         transfer()
     elif enter1 == 4:  #ПОПОЛНЕНИЕ СЧЕТА
         refill()
